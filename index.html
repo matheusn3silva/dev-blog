@@ -19,7 +19,7 @@
   </head>
   <body class="font-[Roboto]">
     <div class="w-full max-w-screen-lg mx-auto">
-      <header
+      <!-- <header
         class="bg-light w-full h-dvh px-6 py-16 flex flex-col gap-6 justify-center"
       >
         <img
@@ -44,7 +44,59 @@
             Buscar Artigo
           </button>
         </div>
-      </header>
+      </header> -->
+
+      <main class="w-full h-dvh px-6 py-16">
+        <h2 class="text-2xl font-bold mb-10">Artigos Recomendados</h2>
+        <section class="flex flex-col gap-8">
+          <div
+            class="rounded-t overflow-hidden border-spacing-[2px] border-lightgray"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-1.svg"
+              alt="Artigo 1"
+            />
+            <div class="flex flex-col gap-3 px-[18px] py-4">
+              <h3
+                class="text-lg font-bold text-nowrap overflow-hidden text-ellipsis"
+              >
+                O que é linguagem de programação? Conheça as principais
+              </h3>
+              <p class="text-sm">
+                Uma das mais populares vertentes da tecnologia da informação, a
+                área de...
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- <footer class="bg-light h-dvh w-full px-6 py-16 flex flex-col gap-12">
+        <h3 class="text-2xl font-bold">Entre em contato</h3>
+        <form class="flex flex-col gap-6">
+          <input
+            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px]"
+            type="text"
+            placeholder="Nome"
+          />
+          <input
+            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px]"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="w-full h-[150px] py-4 px-[14px] rounded-[4px]"
+            placeholder="Assunto da mensagem"
+          ></textarea>
+          <button
+            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px] mt-4"
+            type="submit"
+          >
+            Entrar em contato
+          </button>
+        </form>
+      </footer> -->
     </div>
 
     <script src="./src/assets/js/tailwind.js"></script>
