@@ -7,11 +7,46 @@
     <!-- CDN TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
-  <body>
+  <body class="font-[Roboto]">
     <div class="w-full max-w-screen-lg mx-auto">
-      <h1>TESTE</h1>
+      <header
+        class="bg-light w-full h-dvh px-6 py-16 flex flex-col gap-6 justify-center"
+      >
+        <img
+          class="w-full max-w-52 m-auto"
+          src="./src/assets/images/man.svg"
+          alt="Desenho homem com lápis na mão e um notbook na outra com vários confetes em volta"
+        />
+        <div class="flex flex-col gap-6">
+          <h1 class="text-center text-2xl font-bold">
+            Encontre os <span class="text-main">melhores artigos</span>
+            de programação em um só lugar
+          </h1>
+          <p class="text-center text-base">
+            Explore o topo da programação em um só lugar! Seu destino único para
+            dicas e tendências atuais.
+          </p>
+
+          <button
+            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px]"
+            type="button"
+          >
+            Buscar Artigo
+          </button>
+        </div>
+      </header>
     </div>
+
+    <script src="./src/assets/js/tailwind.js"></script>
   </body>
 </html>
