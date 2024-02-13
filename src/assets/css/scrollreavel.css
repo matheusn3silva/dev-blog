@@ -1,0 +1,15 @@
+.img-scroll,
+.txt-scroll,
+.name-scroll,
+.email-scroll,
+.area-scroll,
+.contactbtn-scroll,
+.article1-scroll,
+.article2-scroll,
+.article3-scroll,
+.article4-scroll,
+.article5-scroll,
+.article6-scroll,
+title-scroll {
+  visibility: hidden;
+}

@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CDN TAILWIND -->
+    <!-- CDN's -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <!-- FONT ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,91 +16,220 @@
       rel="stylesheet"
     />
 
+    <!-- CSS SCROLL REVEAL -->
+    <link rel="stylesheet" href="./src/assets/css/scrollreavel.css" />
+
     <title>Document</title>
   </head>
   <body class="font-[Roboto]">
-    <div class="w-full max-w-screen-lg mx-auto">
-      <!-- <header
-        class="bg-light w-full h-dvh px-6 py-16 flex flex-col gap-6 justify-center"
+    <header class="w-full bg-light px-6 py-16">
+      <div
+        class="w-full h-full max-w-screen-xl m-auto flex gap-8 flex-col lg:flex-row-reverse justify-between items-center"
       >
         <img
-          class="w-full max-w-52 m-auto"
+          class="w-full max-w-52 sm:max-w-80 lg:max-w-[400px] img-scroll"
           src="./src/assets/images/man.svg"
           alt="Desenho homem com lápis na mão e um notbook na outra com vários confetes em volta"
         />
-        <div class="flex flex-col gap-6">
-          <h1 class="text-center text-2xl font-bold">
+        <div class="flex flex-col gap-6 max-w-xl lg:gap-8 txt-scroll">
+          <h1 class="text-center text-2xl font-bold lg:text-start lg:text-4xl">
             Encontre os <span class="text-main">melhores artigos</span>
             de programação em um só lugar
           </h1>
-          <p class="text-center text-base">
+          <p
+            class="text-center text-base lg:text-start lg:text-2xl lg:max-w-[550px]"
+          >
             Explore o topo da programação em um só lugar! Seu destino único para
             dicas e tendências atuais.
           </p>
 
           <button
-            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px]"
+            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px] sm:max-w-[214px] sm:mx-auto lg:mx-0"
             type="button"
           >
             Buscar Artigo
           </button>
         </div>
-      </header> -->
+      </div>
+    </header>
 
-      <main class="w-full h-dvh px-6 py-16">
-        <h2 class="text-2xl font-bold mb-10">Artigos Recomendados</h2>
-        <section class="flex flex-col gap-8">
+    <main class="w-full py-16 md:py-20">
+      <div class="w-full px-4 max-w-screen-xl mx-auto">
+        <h2
+          class="text-2xl font-bold mb-10 md:mb-14 lg:mb-28 sm:text-[28px] md:text-[32px] title-scroll"
+        >
+          Artigos Recomendados
+        </h2>
+        <section
+          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-8 md:gap-y-12"
+        >
           <div
-            class="rounded-t overflow-hidden border-spacing-[2px] border-lightgray"
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article1-scroll"
           >
             <img
               class="w-full max-h-44"
               src="./src/assets/images/article-1.svg"
               alt="Artigo 1"
             />
-            <div class="flex flex-col gap-3 p-4">
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
               <h3
-                class="w-full text-lg font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
               >
-                O que é linguagem de programação?
-                <br />Conheça as principais
+                O que é linguagem de programação? Conheça as principais
               </h3>
-              <p class="text-sm text-wrap overflow-hidden text-ellipsis line-clamp-2">
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
                 Uma das mais populares vertentes da tecnologia da informação, a
                 área de...
               </p>
             </div>
           </div>
+          <div
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article2-scroll"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-2.svg"
+              alt="Artigo 2"
+            />
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
+              <h3
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                Python: por que a linguagem é tão usada para Data Science e
+                finanças?
+              </h3>
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                O mundo da programação conta com algumas opções de linguagem
+                para...
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article3-scroll"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-3.svg"
+              alt="Artigo 3"
+            />
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
+              <h3
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários
+              </h3>
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                O popular serviço de repositório de código GitHub foi adquirido
+                pela...
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article4-scroll"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-4.svg"
+              alt="Artigo 4"
+            />
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
+              <h3
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                15 comandos no GIT que os desenvolvedores precisam saber
+              </h3>
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                Dominar os comandos GIT é uma habilidade que se conquista com...
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article5-scroll"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-5.svg"
+              alt="Artigo 5"
+            />
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
+              <h3
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                GIT e GitHub: o que são e quais as diferenças entre eles?
+              </h3>
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                Git e GibHub são dois softwares de controle de versão essenciais
+                para...
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-[328px] md:max-w-[336px] lg:max-w-96 rounded-t overflow-hidden border-spacing-[2px] border-lightgray article6-scroll"
+          >
+            <img
+              class="w-full max-h-44"
+              src="./src/assets/images/article-6.svg"
+              alt="Artigo 6"
+            />
+            <div class="flex flex-col gap-3 p-4 lg:py-8 lg:px-6">
+              <h3
+                class="w-full text-lg lg:text-xl font-bold text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                GitHub Copilot ganha integração com GPT-4 e interface
+                conversacional
+              </h3>
+              <p
+                class="text-sm lg:text-lg text-wrap overflow-hidden text-ellipsis line-clamp-2"
+              >
+                O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...
+              </p>
+            </div>
+          </div>
         </section>
-      </main>
+      </div>
+    </main>
 
-      <!-- <footer class="bg-light h-dvh w-full px-6 py-16 flex flex-col gap-12">
-        <h3 class="text-2xl font-bold">Entre em contato</h3>
+    <footer class="bg-light w-full px-6 py-16">
+      <div class="w-full max-w-screen-sm mx-auto flex flex-col gap-12">
+        <h3 class="text-2xl font-bold lg:text-center lg:text-3xl title-scroll">
+          Entre em contato
+        </h3>
         <form class="flex flex-col gap-6">
           <input
-            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px]"
+            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px] name-scroll"
             type="text"
             placeholder="Nome"
           />
           <input
-            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px]"
+            class="block w-full py-4 px-[14px] placeholder:text-gray rounded-[4px] email-scroll"
             type="email"
             placeholder="Email"
           />
           <textarea
-            class="w-full h-[150px] py-4 px-[14px] rounded-[4px]"
+            class="w-full h-[150px] py-4 px-[14px] rounded-[4px] resize-none area-scroll"
             placeholder="Assunto da mensagem"
           ></textarea>
           <button
-            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px] mt-4"
+            class="bg-main w-full py-[14px] text-white font-bold uppercase rounded-[4px] mt-4 contactbtn-scroll"
             type="submit"
           >
             Entrar em contato
           </button>
         </form>
-      </footer> -->
-    </div>
+      </div>
+    </footer>
 
     <script src="./src/assets/js/tailwind.js"></script>
+    <script src="./src/assets/js/scrollreveal.js"></script>
   </body>
 </html>
